@@ -15,7 +15,7 @@
 | 7   | [Which topics should be discussed in the Sprint Review?](#which-topics-should-be-discussed-in-the-sprint-review) |
 | 8   | [A member of the Development Team takes the Scrum Master aside to express his concerns about data security issues. What should the Scrum Master do?](#a-member-of-the-development-team-takes-the-scrum-master-aside-to-express-his-concerns-about-data-security-issues-what-should-the-scrum-master-do) |
 | 9   | [What does it mean for a Development Team to be cross-functional?](#what-does-it-mean-for-a-development-team-to-be-cross-functional) |
-| 10  | [Sprint burndown charts are an efficient tracking tool, because they show:](#sprint-burndown-charts-are-an-efficient-tracking-tool-because-they-show)   |
+| 10  | [Sprint burndown charts are an efficient tracking tool, because they show:](#sprint-burndown-charts-are-an-efficient-tracking-tool-because-they-show) |
 
 
 ### You are implementing a software as a service (SaaS) ASP.NET Core web service that will run as an Azure Web App. The web service will use an on-premises SQL Server database for storage. The web service also includes a WebJob that processes data updates. Four customers will use the web service. Each instance of the WebJob processes data for a single customer and must run as a singleton instance. Each deployment must be tested by using deployment slots prior to serving production data. Azure costs must be minimized. Azure resources must be located in an isolated network. You need to configure the App Service plan for the Web App. How should you configure the App Service plan?
