@@ -237,8 +237,6 @@
 - [x] Number of VM instances: 4. Pricing tier: Isolated.
 - [ ] Number of VM instances: 4. Pricing tier: Consumption.
 
-
-
 ### You are a developer for a software as a service (SaaS) company that uses an Azure Function to process orders. The Azure Function currently runs on an Azure Function app that is triggered by an Azure Storage queue. You are preparing to migrate the Azure Function to Kubernetes using Kubernetes-based Event Driven Autoscaling (KEDA). You need to configure Kubernetes Custom Resource Definitions (CRD) for the Azure Function. Which CRDs should you configure?
 
 ![Question 2](images/question2.jpeg)
@@ -247,8 +245,6 @@
 - [ ] Box 1, CRD type: Secret. Box 2, CRD type: ScaledObject. Box 3, CRD type: Secret.
 - [ ] Box 1, CRD type: TriggerAuthentication. Box 2, CRD type: Deployment. Box 3, CRD type: Secret.
 - [ ] Box 1, CRD type: Deployment. Box 2, CRD type: ScaledObject. Box 3, CRD type: TriggerAuthentication.
-
-
 
 ### You are creating a CLI script that creates an Azure web app and related services in Azure App Service. The web app uses the following variables. You need to automatically deploy code from GitHub to the newly created web app. How should you complete the script?
 
@@ -260,35 +256,25 @@
 - [ ] Box 1: az appservice plan create. Box 2: az webapp deployment. Box 3: --plan $webappname. Box 4: az webapp deployment. Box 5: --repo-url $gitrepo --branch master --manual-integration
 - [ ] Box 1: az group delete. Box 2: az webapp create. Box 3: git clone $gitrepo. Box 4: az appservice plan create. Box 5: git clone $gitrepo
 
-
-
 ### You develop a software as a service (SaaS) offering to manage photographs. Users upload photos to a web service which then stores the photos in Azure Storage Blob storage. The storage account type is General-purpose V2. When photos are uploaded, they must be processed to produce and save a mobile-friendly version of the image. The process to produce a mobile-friendly version of the image must start in less than one minute. You need to design the process that starts the photo processing. Solution: Trigger the photo processing from Blob storage events. Does the solution meet the goal?
 
 - [ ] Yes.
 - [x] No.
-
-
 
 ### You develop and deploy an Azure App Service API app to a Windows-hosted deployment slot named Development. You create additional deployment slots named Testing and Production. You enable auto swap on the Production deployment slot. You need to ensure that scripts run and resources are available before a swap operation occurs. Solution: Update the web.config file to include the applicationInitialization configuration element. Specify custom initialization actions to run the scripts. Does the solution meet the goal?
 
 - [x] Yes.
 - [ ] No.
 
-
-
 ### You develop and deploy an Azure App Service API app to a Windows-hosted deployment slot named Development. You create additional deployment slots named Testing and Production. You enable auto swap on the Production deployment slot. You need to ensure that scripts run and resources are available before a swap operation occurs. Solution: Enable auto swap for the Testing slot. Deploy the app to the Testing slot. Does the solution meet the goal?
 
 - [ ] Yes.
 - [x] No.
 
-
-
 ### You develop and deploy an Azure App Service API app to a Windows-hosted deployment slot named Development. You create additional deployment slots named Testing and Production. You enable auto swap on the Production deployment slot. You need to ensure that scripts run and resources are available before a swap operation occurs. Solution: Disable auto swap. Update the app with a method named statuscheck to run the scripts. Re-enable auto swap and deploy the app to the Production slot. Does the solution meet the goal?
 
 - [x] Yes.
 - [ ] No.
-
-
 
 ### You develop a software as a service (SaaS) offering to manage photographs. Users upload photos to a web service which then stores the photos in Azure Storage Blob storage. The storage account type is General-purpose V2. When photos are uploaded, they must be processed to produce and save a mobile-friendly version of the image. The process to produce a mobile-friendly version of the image must start in less than one minute. You need to design the process that starts the photo processing. Solution: Convert the Azure Storage account to a BlockBlobStorage storage account. Does the solution meet the goal?
 
@@ -306,8 +292,6 @@
 - [ ] Client certificate location: HTTP request header. Encoding type: Unicode.
 - [x] Client certificate location: HTTP request header. Encoding type: Base64.
 
-
-
 ### You are developing a Docker/Go using Azure App Service Web App for Containers. You plan to run the container in an App Service on Linux. You identify a Docker container image to use. None of your current resource groups reside in a location that supports Linux. You must minimize the number of resource groups required. You need to create the application and perform an initial deployment. Which three Azure CLI commands should you use to develop the solution?
 
 ![Question 10](images/question10.png)
@@ -316,8 +300,6 @@
 - [ ] Box 1: az appservice plan create. Box 2: az group create. Box 3: az group update.
 - [x] Box 1: az group create. Box 2: az appservice plan create. Box 3: az webapp create.
 - [ ] Box 1: az appservice plan create. Box 2: az webapp create. Box 3: az webapp update.
-
-
 
 ### Fourth Coffee has an ASP.NET Core web app that runs in Docker. The app is mapped to the www.fourthcoffee.com domain. Fourth Coffee is migrating this application to Azure. You need to provision an App Service Web App to host this docker image and map the custom domain to the App Service web app. A resource group named FourthCoffeePublicWebResourceGroup has been created in the WestUS region that contains an App Service Plan named AppServiceLinuxDockerPlan. Which order should the CLI commands be used to develop the solution?
 
@@ -328,8 +310,6 @@
 - [ ] Box 1: az webapp config container set --docker-custom-image-name $dockerHubContainerPath --name $appName --resource-group fourthCoffeePublicWebResourceGroup. Box 2: az webapp create --name $appName --plan AppServiceLinuxDockerPlan --resource-group fourthCoffeePublicWebResourceGroup. Box 3: az webapp config hostname add --webapp-name $appName --resource-group fourthCoffeePublicWebResourceGroup --hostname $fqdn.. Box 4: #/bin/bash appName='FourthCoffeePublicWeb$random' location='WestUS' dockerHubContainerPath='FourthCoffee/publicweb:v1' fqdn='http://www.fourthcoffee.com'>www.fourthcoffee.com..
 - [ ] Box 1: az webapp config hostname add --webapp-name $appName --resource-group fourthCoffeePublicWebResourceGroup --hostname $fqdn. Box 2: az webapp create --name $appName --plan AppServiceLinuxDockerPlan --resource-group fourthCoffeePublicWebResourceGroup. Box 3: #/bin/bash appName='FourthCoffeePublicWeb$random' location='WestUS' dockerHubContainerPath='FourthCoffee/publicweb:v1' fqdn='http://www.fourthcoffee.com'>www.fourthcoffee.com. Box 4: az webapp config container set --docker-custom-image-name $dockerHubContainerPath --name $appName --resource-group fourthCoffeePublicWebResourceGroup.
 
-
-
 ### You are developing a serverless Java application on Azure. You create a new Azure Key Vault to work with secrets from a new Azure Functions application. The application must meet the following requirements: Reference the Azure Key Vault without requiring any changes to the Java code. Dynamically add and remove instances of the Azure Functions host based on the number of incoming application events. Ensure that instances are perpetually warm to avoid any cold starts. Connect to a VNet. Authentication to the Azure Key Vault instance must be removed if the Azure Function application is deleted. You need to grant the Azure Functions application access to the Azure Key Vault. Which three actions should you perform in sequence?
 
 ![Question 12](images/question12.png)
@@ -339,16 +319,12 @@
 - [ ] Box 1: Create the Azure Functions app with a Consumption plan type. Box 2: Create a user-assigned managed identity for the application. Box 3: Create an access policy in Azure Key Vault for the application identity.
 - [ ] Box 1: Create the Azure Functions app with a Premium plan type. Box 2: Create a user-assigned managed identity for the application. Box 3: Create an access policy in Azure Key Vault for the application identity.
 
-
-
 ### You develop a website. You plan to host the website in Azure. You expect the website to experience high traffic volumes after it is published. You must ensure that the website remains available and responsive while minimizing cost. You need to deploy the website. What should you do?
 
 - [ ] Deploy the website to a virtual machine. Configure the virtual machine to automatically scale when the CPU load is high.
 - [ ] Deploy the website to an App Service that uses the Shared service tier. Configure the App Service plan to automatically scale when the CPU load is high.
 - [ ] Deploy the website to a virtual machine. Configure a Scale Set to increase the virtual machine instance count when the CPU load is high.
 - [x] Deploy the website to an App Service that uses the Standard service tier. Configure the App Service plan to automatically scale when the CPU load is high.
-
-
 
 ### A company is developing a Java web app. The web app code is hosted in a GitHub repository located at https://github.com/Contoso/webapp. The web app must be evaluated before it is moved to production. You must deploy the initial code release to a deployment slot named staging. You need to create the web app and deploy the code. How should you complete the commands?
 
@@ -359,8 +335,6 @@
 - [ ] Box 1: webapp. Box 2: group. Box 3: webapp deployment source. Box 4: webapp deployment slot. Box 5: appservice plan.
 - [ ] Box 1: webapp. Box 2: group. Box 3: webapp deployment source. Box 4: webapp deployment slot. Box 5: appservice plan.
 
-
-
 ### You have a web service that is used to pay for food deliveries. The web service uses Azure Cosmos DB as the data store. You plan to add a new feature that allows users to set a tip amount. The new feature requires that a property named tip on the document in Cosmos DB must be present and contain a numeric value. There are many existing websites and mobile apps that use the web service that will not be updated to set the tip property for some time. How should you complete the trigger?
 
 ![Question 15](images/question15.jpeg)
@@ -369,8 +343,6 @@
 - [ ] Box 1: __readDocument()('item');. Box 2: if (!('tip' in i)) {. Box 3: __.replaceDocument(i);.
 - [x] Box 1: getContext().getRequest();. Box 2: if (!('tip' in i)) {. Box 3: r.setBody(i);.
 - [ ] Box 1: getContext().getRequest();. Box 2: if (isNaN(i)['tip'] || i['tip'] === null) {. Box 3: r.setValue(i);.
-
-
 
 ### You develop an HTTP triggered Azure Function app to process Azure Storage blob data. The app is triggered using an output binding on the blob. The app continues to time out after four minutes. The app must process the blob data. You need to ensure the app does not time out and processes the blob data. Solution: Use the Durable Function async pattern to process the blob data. Does the solution meet the goal?
 
