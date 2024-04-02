@@ -20,72 +20,92 @@
 
 ### You are implementing a software as a service (SaaS) ASP.NET Core web service that will run as an Azure Web App. The web service will use an on-premises SQL Server database for storage. The web service also includes a WebJob that processes data updates. Four customers will use the web service. Each instance of the WebJob processes data for a single customer and must run as a singleton instance. Each deployment must be tested by using deployment slots prior to serving production data. Azure costs must be minimized. Azure resources must be located in an isolated network. You need to configure the App Service plan for the Web App. How should you configure the App Service plan?
 
-![Question 1](images/question1.jpeg)
+- [ ] There should be six Product Owners, one for each Scrum Team.
+- [ ] There should be six Product Owners, reporting to a chief Product Owner.
+- [x] The product has one Product Backlog.
+- [ ] Each Scrum Team should have a separate Product Backlog.
+- [x] There should be only one Product Owner.
 
-- [ ] Number of VM instances: 2. Pricing tier: Isolated.
-- [ ] Number of VM instances: 8. Pricing tier: Standard.
-- [ ] Number of VM instances: 16. Pricing tier: Premium.
-- [x] Number of VM instances: 4. Pricing tier: Isolated.
-- [ ] Number of VM instances: 4. Pricing tier: Consumption.
+**[⬆ Back to Top](#table-of-contents)**
 
-### You are a developer for a software as a service (SaaS) company that uses an Azure Function to process orders. The Azure Function currently runs on an Azure Function app that is triggered by an Azure Storage queue. You are preparing to migrate the Azure Function to Kubernetes using Kubernetes-based Event Driven Autoscaling (KEDA). You need to configure Kubernetes Custom Resource Definitions (CRD) for the Azure Function. Which CRDs should you configure?
+### A Scrum Team has been working on a product for nine Sprints. A new Product Owner comes in, understanding he is accountable for the Product Backlog. However, he is unsure about his responsibilities. Which two activities are part of the Product Owner role according to Scrum? (choose two)
 
-![Question 2](images/question2.jpeg)
+- [x] Ensuring that the most valuable functionality is produced first, at all times.
+- [x] Interacting with stakeholders.
+- [ ] Providing the Development Team with detailed specifications.
+- [ ] Describing features as Use Cases.
+- [ ] Creating detailed functional test cases.
 
-- [x] Box 1, CRD type: Deployment. Box 2, CRD type: ScaledObject. Box 3, CRD type: Secret.
-- [ ] Box 1, CRD type: Secret. Box 2, CRD type: ScaledObject. Box 3, CRD type: Secret.
-- [ ] Box 1, CRD type: TriggerAuthentication. Box 2, CRD type: Deployment. Box 3, CRD type: Secret.
-- [ ] Box 1, CRD type: Deployment. Box 2, CRD type: ScaledObject. Box 3, CRD type: TriggerAuthentication.
+**[⬆ Back to Top](#table-of-contents)**
 
-### You are creating a CLI script that creates an Azure web app and related services in Azure App Service. The web app uses the following variables. You need to automatically deploy code from GitHub to the newly created web app. How should you complete the script?
+### User documentation is part of your definition of "Done". However, there aren't enough technical writers for all teams. Your Development Team doesn't have a technical writer. What should you do?
 
-![Question 3 part 1](images/question3_1.png)
-![Question 3 part 2](images/question3_2.jpeg)
+- [ ] Form a separate team of technical writers that will work on an on-demand basis for the various Product Owners. Work order will be first in, first out.
+- [ ] Let the user documentation remain undone and accumulate until after the last development Sprint. It will then be done by any available technical writers.
+- [ ] Wait until you have a technical writer on your Development Team to take care of this.
+- [x] Your Development Team is still responsible for creating user documentation. In this case, the Development Team members will write it.
 
-- [ ] Box 1: az webapp. Box 2: az webapp create. Box 3: git clone $gitrepo. Box 4: az webapp. Box 5: --plan $webappname
-- [x] Box 1: az appservice plan create. Box 2: az webapp create. Box 3: --plan $webappname. Box 4: az webapp deployment. Box 5: --repo-url $gitrepo --branch master --manual-integration
-- [ ] Box 1: az appservice plan create. Box 2: az webapp deployment. Box 3: --plan $webappname. Box 4: az webapp deployment. Box 5: --repo-url $gitrepo --branch master --manual-integration
-- [ ] Box 1: az group delete. Box 2: az webapp create. Box 3: git clone $gitrepo. Box 4: az appservice plan create. Box 5: git clone $gitrepo
+**[⬆ Back to Top](#table-of-contents)**
 
-### You develop a software as a service (SaaS) offering to manage photographs. Users upload photos to a web service which then stores the photos in Azure Storage Blob storage. The storage account type is General-purpose V2. When photos are uploaded, they must be processed to produce and save a mobile-friendly version of the image. The process to produce a mobile-friendly version of the image must start in less than one minute. You need to design the process that starts the photo processing. Solution: Trigger the photo processing from Blob storage events. Does the solution meet the goal?
+### You are the Scrum Master for four Scrum Teams working from the same Product Backlog. Several of the developers come to you complaining that work identified for the upcoming two Sprints will require full-time commitment from a technical specialist who is external to the teams. What are two key concerns for the Scrum Master to take into account in this situation? (choose two)
 
-- [ ] Yes.
-- [x] No.
+- [ ] The desire to maintain a stable velocity.
+- [x] The benefit of Development Teams figuring out a solution for themselves.
+- [ ] The need to have enough work to keep all Development Team members busy.
+- [x] The ability of the Development Teams to produce integrated Increments.
 
-### You develop and deploy an Azure App Service API app to a Windows-hosted deployment slot named Development. You create additional deployment slots named Testing and Production. You enable auto swap on the Production deployment slot. You need to ensure that scripts run and resources are available before a swap operation occurs. Solution: Update the web.config file to include the applicationInitialization configuration element. Specify custom initialization actions to run the scripts. Does the solution meet the goal?
+**[⬆ Back to Top](#table-of-contents)**
 
-- [x] Yes.
-- [ ] No.
+### The Product Backlog is ordered by:
 
-### You develop and deploy an Azure App Service API app to a Windows-hosted deployment slot named Development. You create additional deployment slots named Testing and Production. You enable auto swap on the Production deployment slot. You need to ensure that scripts run and resources are available before a swap operation occurs. Solution: Enable auto swap for the Testing slot. Deploy the app to the Testing slot. Does the solution meet the goal?
+- [x] The Product Owner with the most valuable items placed at the top.
+- [ ] Risk, where safer items are at the top, and riskier items are at the bottom.
+- [ ] Items are randomly arranged.
+- [ ] Size, where small items are at the top and large items are at the bottom.
 
-- [ ] Yes.
-- [x] No.
+**[⬆ Back to Top](#table-of-contents)**
 
-### You develop and deploy an Azure App Service API app to a Windows-hosted deployment slot named Development. You create additional deployment slots named Testing and Production. You enable auto swap on the Production deployment slot. You need to ensure that scripts run and resources are available before a swap operation occurs. Solution: Disable auto swap. Update the app with a method named statuscheck to run the scripts. Re-enable auto swap and deploy the app to the Production slot. Does the solution meet the goal?
+### What happens if the Development Team cannot complete its work by the end of the Sprint?
 
-- [x] Yes.
-- [ ] No.
+- [ ] The Sprint is extended and future Sprints use this new duration.
+- [x] The Sprint length holds and the Development Team continuously learns what is actually possible to do within a Sprint of this length.
+- [ ] The Sprint is extended temporarily. Lessons are taken to ensure it doesn't happen again.
 
-### You develop a software as a service (SaaS) offering to manage photographs. Users upload photos to a web service which then stores the photos in Azure Storage Blob storage. The storage account type is General-purpose V2. When photos are uploaded, they must be processed to produce and save a mobile-friendly version of the image. The process to produce a mobile-friendly version of the image must start in less than one minute. You need to design the process that starts the photo processing. Solution: Convert the Azure Storage account to a BlockBlobStorage storage account. Does the solution meet the goal?
+**[⬆ Back to Top](#table-of-contents)**
 
-- [ ] Yes.
-- [x] No.
+### Which topics should be discussed in the Sprint Review?
 
-### You are developing an Azure Web App. You configure TLS mutual authentication for the web app. You need to validate the client certificate in the web app.
+- [ ] The Scrum process, and how it was used during the Sprint.
+- [ ] Coding and engineering practices.
+- [x] Sprint results.
+- [ ] All of the above.
 
-![Question 9](images/question9.jpeg)
+**[⬆ Back to Top](#table-of-contents)**
 
-- [ ] Client certificate location: Client cookie. Encoding type: URL.
-- [ ] Client certificate location: HTTP message body. Encoding type: Base64.
-- [ ] Client certificate location: HTTP request header. Encoding type: Unicode.
-- [x] Client certificate location: HTTP request header. Encoding type: Base64.
+### A member of the Development Team takes the Scrum Master aside to express his concerns about data security issues. What should the Scrum Master do?
 
-### You are developing a Docker/Go using Azure App Service Web App for Containers. You plan to run the container in an App Service on Linux. You identify a Docker container image to use. None of your current resource groups reside in a location that supports Linux. You must minimize the number of resource groups required. You need to create the application and perform an initial deployment. Which three Azure CLI commands should you use to develop the solution?
+- [ ] Add security to the definition of "Done".
+- [ ] Tell the Product Owner to stop further development of features until the issues are fixed.
+- [ ] Create a Product Backlog item for security.
+- [ ] Go check with the testers.
+- [x] Ask the person to share the issue with the team as soon as possible.
 
-![Question 10](images/question10.png)
+**[⬆ Back to Top](#table-of-contents)**
 
-- [ ] Box 1: az webapp create. Box 2: az appservice plan create. Box 3: az group create.
-- [ ] Box 1: az appservice plan create. Box 2: az group create. Box 3: az group update.
-- [x] Box 1: az group create. Box 2: az appservice plan create. Box 3: az webapp create.
-- [ ] Box 1: az appservice plan create. Box 2: az webapp create. Box 3: az webapp update.
+### What does it mean for a Development Team to be cross-functional?
+
+- [ ] The Development Team includes not only developers but also business analysts, architects, and testers.
+- [x] The Development Team includes cross-skilled individuals who are able to contribute to do what is necessary to deliver an increment of software.
+- [ ] Developers on the Development Team work closely with business analysts, architects, developers and testers who are not on the team.
+- [ ] The Development Team is a virtual team drawing from separate teams of business analysts, architects, developers and testers.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+### Sprint burndown charts are an efficient tracking tool, because they show:
+
+- [x] An estimate of the total work remaining for the Sprint.
+- [ ] How much effort has gone into a Sprint.
+- [ ] How many hours have been worked by each Development Team member.
+- [ ] How many Product Backlog items remain.
+
+**[⬆ Back to Top](#table-of-contents)**
